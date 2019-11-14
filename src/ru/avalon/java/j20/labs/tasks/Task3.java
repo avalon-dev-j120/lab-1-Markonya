@@ -13,6 +13,12 @@ public class Task3 implements Task {
 
     @Override
     public void run() {
+        
+        Fibonacci fib = new Fibonacci (20);
+        
+        Iterator iter = fib.iterator();
+        
+        while
         /*
          * TODO(Студент): Выполнить задание №3
          *
