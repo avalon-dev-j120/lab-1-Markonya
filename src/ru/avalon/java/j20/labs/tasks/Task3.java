@@ -1,6 +1,7 @@
 package ru.avalon.java.j20.labs.tasks;
 
 import ru.avalon.java.j20.labs.Task;
+import ru.avalon.java.j20.labs.models.Fibonacci;
 
 import java.util.Iterator;
 
@@ -18,7 +19,9 @@ public class Task3 implements Task {
         
         Iterator iter = fib.iterator();
         
-        while
+        while (iter.hasNext()) {
+            System.out.println(iter.next());
+        }
         /*
          * TODO(Студент): Выполнить задание №3
          *
