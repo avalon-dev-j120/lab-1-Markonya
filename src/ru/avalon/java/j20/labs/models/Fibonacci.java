@@ -2,6 +2,7 @@ package ru.avalon.java.j20.labs.models;
 
 import java.util.Iterator;
 
+
 /**
  * Модель получения последовательности чисел Фибоначчи.
  *
@@ -34,7 +35,7 @@ public class Fibonacci implements Iterable<Integer> {
          */
         @Override
         public boolean hasNext() {
-            throw new UnsupportedOperationException("Not implemented yet!");
+            return true;
         }
 
         /**
