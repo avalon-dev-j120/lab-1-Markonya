@@ -19,9 +19,10 @@ public class Task3 implements Task {
         Fibonacci fib = new Fibonacci(20);
 
         Iterator iter = fib.iterator();
-
+        sum =
         while (iter.hasNext()) {
             System.out.println(iter.next());
+
         }
         /*
          * TODO(Студент): Выполнить задание №3
