@@ -8,17 +8,18 @@ import java.util.Iterator;
 /**
  * Задание №3
  *
- * <p>Тема: "Изучение интерфейсов {@link Iterable} и {@link Iterator}".
+ * <p>
+ * Тема: "Изучение интерфейсов {@link Iterable} и {@link Iterator}".
  */
 public class Task3 implements Task {
 
     @Override
     public void run() {
-        
-        Fibonacci fib = new Fibonacci (20);
-        
+
+        Fibonacci fib = new Fibonacci(20);
+
         Iterator iter = fib.iterator();
-        
+
         while (iter.hasNext()) {
             System.out.println(iter.next());
         }
