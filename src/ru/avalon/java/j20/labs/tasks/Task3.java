@@ -1,18 +1,34 @@
 package ru.avalon.java.j20.labs.tasks;
 
 import ru.avalon.java.j20.labs.Task;
+import ru.avalon.java.j20.labs.models.Fibonacci;
 
 import java.util.Iterator;
 
 /**
  * Задание №3
  *
- * <p>Тема: "Изучение интерфейсов {@link Iterable} и {@link Iterator}".
+ * <p>
+ * Тема: "Изучение интерфейсов {@link Iterable} и {@link Iterator}".
  */
 public class Task3 implements Task {
 
     @Override
     public void run() {
+
+        Fibonacci fib = new Fibonacci(20);
+
+        Iterator iter = fib.iterator();
+
+        while (iter.hasNext()) {
+            System.out.println(iter.next());
+        }
+            int sum = 0;
+
+            for (int x : fib) sum += x;
+            System.out.println("Сумма = " + sum);
+        }
+        
         /*
          * TODO(Студент): Выполнить задание №3
          *
@@ -35,4 +51,4 @@ public class Task3 implements Task {
          *    выполнения задания.
          */
     }
-}
+
